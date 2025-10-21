@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gee Trend - Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <a href="#" class="logo"
+            ><img src="logo.png" alt="logo" height="87px" width="87px"
+          /></a>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div
+            class="menu-toggle"
+            aria-label="Toggle menu"
+            role="button"
+            tabindex="0"
+          >
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Hello, I'm George Olumide</h1>
+          <p>
+            I'm a passionate web developer and designer creating beautiful,
+            functional websites that help businesses grow online.
+          </p>
+          <div class="hero-btns">
+            <a href="#portfolio" class="btn">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>About Me</h2>
+          <p>Learn more about my background, skills, and experience</p>
+        </div>
+        <div class="about-content">
+          <div class="about-img">
+            <img src="myprofile.jpg" alt="myprofile" />
+          </div>
+          <div class="about-text">
+            <h3>Developing Solutions That Drive Success</h3>
+            <p>
+              I'm a full-stack developer with over 5 years of experience
+              creating digital solutions for businesses of all sizes. My passion
+              lies in crafting clean, efficient code and designing intuitive
+              user experiences.
+            </p>
+            <p>
+              I specialize in responsive web design, e-commerce solutions, and
+              custom web applications. My approach combines technical expertise
+              with creative problem-solving to deliver projects that exceed
+              expectations.
+            </p>
+            <div class="skills">
+              <span class="skill">HTML/CSS</span>
+              <span class="skill">JavaScript</span>
+              <span class="skill">React</span>
+              <span class="skill">Node.js</span>
+              <span class="skill">Digital Marketing</span>
+              <span class="skill">Responsive Design</span>
+            </div>
+            <a
+              href="images/Akinde George E c.v.pdf"
+              download="Akinde George E c.v.pdf"
+              class="btn"
+              style="margin-top: 20px"
+              >Download CV</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-title">
+          <h2>My Services</h2>
+          <p>I offer a range of services to help your business thrive online</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Web Development</h3>
+            <p>
+              Custom website development using the latest technologies and
+              frameworks to create fast, secure, and scalable solutions.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-bullhorn"></i>
+            </div>
+            <h3>Digital Marketing</h3>
+            <p>
+              Data-driven digital marketing: strategy, social media campaigns,
+              content marketing, paid ads, and performance tracking to grow your
+              brand and conversions.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <h3>E-commerce Solutions</h3>
+            <p>
+              Complete e-commerce development including product catalogs,
+              payment integration, and inventory management.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <div class="container">
+        <div class="section-title">
+          <h2>My Portfolio</h2>
+          <p>Check out some of my recent projects</p>
+        </div>
+        <div class="portfolio-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web Design</button>
+          <button class="filter-btn" data-filter="app">App Development</button>
+          <button class="filter-btn" data-filter="branding">Branding</button>
+        </div>
+        <div class="portfolio-grid">
+          <div class="portfolio-item" data-category="web">
+            <img
+              src="images/main page.png"
+              alt="Project 1"
+              class="portfolio-img"
+            />
+            <div class="portfolio-overlay">
+              <h3>E-commerce Website</h3>
+              <p>Web Design</p>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="app">
+            <img src="images/apps.png" alt="Project 2" class="portfolio-img" />
+            <div class="portfolio-overlay">
+              <h3>Web App</h3>
+              <p>App Development</p>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="branding">
+            <img
+              src="images/bookstore.png"
+              alt="Project 3"
+              class="portfolio-img"
+            />
+            <div class="portfolio-overlay">
+              <h3>Brand Identity</h3>
+              <p>Branding</p>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="digital-marketing">
+            <img
+              src="images/studio.jpg"
+              alt="Project 3"
+              class="portfolio-img"
+            />
+            <div class="portfolio-overlay">
+              <h3>Song Promotion</h3>
+              <p>Promotion</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact Me</h2>
+          <p>Get in touch to discuss your project</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h3>Location</h3>
+                <p>16 Adedoyin Street, ikotun, Lagos</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div>
+                <h3>Phone</h3>
+                <p>+234 703 052 8292</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h3>Email</h3>
+                <p>geetrendpromotion@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="subject"
+                  class="form-control"
+                  placeholder="Subject"
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  class="form-control"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-col">
+            <h3>GeeTrend</h3>
+            <p>
+              Creating digital experiences that make a difference. Let's work
+              together to bring your ideas to life.
+            </p>
+            <div class="social-links">
+              <a href="https://web.facebook.com/profile.php?id=100068132592700"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="x.com/geetrendmedia"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/geetrenddy/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/akinde-olumide-10a85421b/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Services</h3>
+            <ul class="footer-links">
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Digital Marketing</a></li>
+              <li><a href="#">E-commerce</a></li>
+              <li><a href="#">SEO Optimization</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 GeeTrend. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
